@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" id="reset">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tic-tac-toe</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <script src="app.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body onreset="resetGame()">
+  
+  <div id="game-board" class="board">
+    <h2 id="game-display">Tic Tac toe</h2>
+    
+    <div id="row-1">
+      <div onclick="play(this,1);">&nbsp;</div>
+      <div onclick="play(this,2);">&nbsp;</div>
+      <div onclick="play(this,4);">&nbsp;</div>
+    </div>
+    <div id="row-2">
+      <div onclick="play(this,8);">&nbsp;</div>
+      <div onclick="play(this,16);">&nbsp;</div>
+      <div onclick="play(this,32);">&nbsp;</div>
+    </div>    
+    <div id="row-3">
+      <div onclick="play(this,64);">&nbsp;</div>
+      <div onclick="play(this,128);">&nbsp;</div>
+      <div onclick="play(this,256);">&nbsp;</div>    
+    </div>
+  
+  </div>
+  <button onclick="resetGame()">Reset</button>
+</body>  
+</html>
